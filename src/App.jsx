@@ -8,6 +8,18 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PrivateRoutes from "./pages/utils/PrivateRoutes";
 
+import Appwrite from "appwrite";
+
+const appwrite = new Appwrite();
+
+// Set CORS headers for all Appwrite API requests
+appwrite.setHeaders({
+  "Access-Control-Allow-Origin":
+    "https://edas-p3fcy9xhd-mplanner12s-projects.vercel.app",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+});
+
 function App() {
   return (
     <Router>

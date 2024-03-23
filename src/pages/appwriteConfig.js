@@ -1,4 +1,14 @@
-import { Client, Account } from "appwrite";
+import { Client, Account, Appwrite } from "appwrite";
+
+const appwrite = new Appwrite();
+
+// Set CORS headers for all Appwrite API requests
+appwrite.setHeaders({
+  "Access-Control-Allow-Origin":
+    "https://edas-p3fcy9xhd-mplanner12s-projects.vercel.app",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+});
 
 const client = new Client();
 
