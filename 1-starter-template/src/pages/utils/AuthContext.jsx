@@ -4,6 +4,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { account } from "../appwriteConfig";
 import { ID } from "appwrite";
+import { Loading } from "../../components/Loading";
 
 const AuthContext = createContext();
 
@@ -79,7 +80,13 @@ export const AuthProvider = ({ children }) => {
   };
   return (
     <AuthContext.Provider value={contextData}>
-      {loading ? <p>Loading...</p> : children}
+      {loading ? (
+        <p>
+          <Loading />
+        </p>
+      ) : (
+        children
+      )}
     </AuthContext.Provider>
   );
 };
