@@ -50,24 +50,24 @@ const Home = () => {
               0810373460610
             </p> */}
             </div>
-            <div className="w-full flex justify-between bg-inherit text-2xl mt-5 text-white">
+            <div className="w-full flex justify-between bg-inherit text-2xl mt-5 text-green-950">
               <div className="w-[4rem]">
                 <MdReport color="red" className="w-full">
                   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
                 </MdReport>
-                <p className="text-xs font-semibold">REPORT</p>
+                <p className="text-xs font-extrabold">REPORT</p>
               </div>
               <div className="w-[4rem]">
                 <IoMdLocate color="green" className="w-full">
                   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
                 </IoMdLocate>
-                <p className="text-xs font-semibold">LOCATE</p>
+                <p className="text-xs font-extrabold">LOCATE</p>
               </div>
               <div className="w-[4rem]">
-                <IoMdSettings className="w-full">
+                <IoMdSettings color="black" className="w-full">
                   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
                 </IoMdSettings>
-                <p className="text-xs font-semibold">SETTIGNS</p>
+                <p className="text-xs font-extrabold">SETTIGNS</p>
               </div>
             </div>
           </div>
