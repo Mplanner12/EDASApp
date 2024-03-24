@@ -1,5 +1,5 @@
 import { LoginForm } from "../components/LoginForm";
-import image from "../../public/firefighters.jpg";
+import image from "../../src/firefighters.jpg";
 
 const Login = () => {
   return (
