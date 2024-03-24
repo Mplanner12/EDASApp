@@ -4,6 +4,7 @@ import { useAuth } from "../pages/utils/AuthContext";
 import { FaHome } from "react-icons/fa";
 import { MdSpaceDashboard } from "react-icons/md";
 import { IoLogOut } from "react-icons/io5";
+import { IoIosLogIn } from "react-icons/io";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -32,8 +33,13 @@ const Header = () => {
           </div>
         ) : (
           <>
-            <Link className="btn" to="/login">
+            <Link
+              className="flex gap-1 justify-evenly items-center header--link px-2 font-bold text-green-950"
+              id="header-login"
+              to="/login"
+            >
               Login
+              <IoIosLogIn className="text-white font-extrabold relative top-0.5 text-2xl" />
             </Link>
           </>
         )}

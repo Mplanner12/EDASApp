@@ -25,7 +25,9 @@ export const LoginForm = () => {
 
   return (
     <div className="mx-auto">
-      <h1 className="relative -top-10 text-center text-3xl font-bold">Login</h1>
+      <h1 className="relative -top-10 text-center text-3xl font-bold text-green-950 underline">
+        Login
+      </h1>
       <div className="login-register-container text-gray-900">
         <form ref={loginForm} onSubmit={handleSubmit}>
           <div className="py-[1.5rem] text-center">
