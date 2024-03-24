@@ -15,7 +15,7 @@ const Home = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="p-5 h-fit md:h-screen md:bg-no-repeat md:bg-contain md:w-full"
+      className="p-5 h-screen md:bg-no-repeat md:bg-contain md:w-full"
     >
       <div>
         <h1 className="mt-5 md:mt-5 text-center font-extrabold text-xl text-green-950">
