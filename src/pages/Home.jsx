@@ -4,7 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { MdReport } from "react-icons/md";
 import { IoMdLocate } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
-import image from "../../src/firefighters4.jpg";
+import image from "../../src/firefighter4.jpg";
 
 const Home = () => {
   const { user } = useAuth();
