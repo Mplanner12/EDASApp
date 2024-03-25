@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MdReport } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdSettings } from "react-icons/md";
-import image from "../../src/firefighter4.jpg";
+import image from "../../src/firefighter3.jpg";
 
 const Profile = () => {
   const { user } = useAuth();
@@ -67,12 +67,14 @@ const Profile = () => {
               <h4 className="font-extrabold mt-12 md:mt-20 md:mb-4 text-green-950">
                 ABOUT EDAS
               </h4>
-              <p className="mt-4.5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque posuere fermentum urna, eu condimentum mauris
-                tempus ut. Donec fermentum blandit aliquet. Etiam dictum dapibus
-                ultricies. Sed vel aliquet libero. Nunc a augue fermentum,
-                pharetra ligula sed, aliquam lacus.
+              <p className="mt-4.5 text-black">
+                EDAS App is a mobile app that is powered by AI to independently
+                capture, examine and determine emergencies and to report such to
+                respective agencies for further actions. A user might need to
+                launch the app and position the camera to capture the event. At
+                the background, the system will accurately determine the type of
+                emergency, retrieve the associated contacts and communicate with
+                agencies via the contact details.
               </p>
             </div>
 
