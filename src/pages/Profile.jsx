@@ -26,40 +26,44 @@ const Profile = () => {
             <p className="mt-10 font-extrabold text-green-950">Fire Services</p>
             <div className="mx-auto mt-4.5 mb-5.5 grid max-w-94 grid-cols-3 rounded-md  py-2.5 shadow-1 dark:border-strokedark">
               <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
-                <span className="font-semibold text-black dark:text-white">
-                  <button>
+                <button>
+                  <span className="font-semibold text-black">
                     <Link className="w-[8.5rem] md:mt-3">
                       <MdReport color="red" className="w-full">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
                       </MdReport>
                     </Link>
-                  </button>
-                </span>
-                <span className="text-sm">Report</span>
+                  </span>
+                  <span className="text-sm font-bold text-black">Report</span>
+                </button>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
-                <span className="font-semibold text-black dark:text-white">
-                  <button>
+                <button>
+                  <span className="text-black font-bold">
                     <Link className="w-[8.5rem] md:mt-3">
                       <FaLocationArrow color="green" className="w-full">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
                       </FaLocationArrow>
                     </Link>
-                  </button>
-                </span>
-                <span className="text-sm">Locate Us</span>
+                  </span>
+                  <span className="text-sm text-black font-bold">
+                    Locate Us
+                  </span>
+                </button>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 px-4 xsm:flex-row">
-                <span className="font-semibold text-black dark:text-white">
-                  <button>
+                <button>
+                  <span className="text-black font-bold">
                     <Link className="w-[8.5rem] md:mt-3">
                       <MdSettings color="black" className="w-full">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
                       </MdSettings>
                     </Link>
-                  </button>
-                </span>
-                <span className="text-sm">Following</span>
+                  </span>
+                  <span className="text-sm text-black font-bold">
+                    Following
+                  </span>
+                </button>
               </div>
             </div>
 
