@@ -23,10 +23,10 @@ const SignUp: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!registerForm.current) return;
-    const name = registerForm.current.name?.value;
-    const email = registerForm.current.email.value;
-    const password1 = registerForm.current.password1.value;
-    const password2 = registerForm.current.password2.value;
+    const name = registerForm.current.name?.value as string;
+    const email = registerForm.current.email?.value as string;
+    const password1 = registerForm.current?.password1.value as string;
+    const password2 = registerForm.current?.password2.value as string;
 
     // Check if fields are empty
     if (!name || !email || !password1 || !password2) {
@@ -274,6 +274,7 @@ const SignUp: React.FC = () => {
                   </label>
                   <div className="relative">
                     <input
+                      name="password1"
                       type="password1"
                       placeholder="Enter your password, 8+ Characters,  Alpha numeric"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
@@ -309,6 +310,7 @@ const SignUp: React.FC = () => {
                   </label>
                   <div className="relative">
                     <input
+                      name="password2"
                       type="password2"
                       placeholder="Re-enter your password"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"

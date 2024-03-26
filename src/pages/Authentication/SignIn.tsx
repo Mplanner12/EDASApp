@@ -21,8 +21,8 @@ const SignIn: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const email = loginForm.current?.email.value;
-    const password = loginForm.current?.password.value;
+    const email = loginForm.current?.email.value as string;
+    const password = loginForm.current?.password.value as string;
 
     const userInfo = { email, password };
     loginUser(userInfo);
@@ -187,8 +187,8 @@ const SignIn: React.FC = () => {
                   </label>
                   <div className="relative">
                     <input
-                      type="email"
                       name="email"
+                      type="email"
                       placeholder="Enter your email"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                     />
