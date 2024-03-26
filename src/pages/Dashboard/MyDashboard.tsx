@@ -5,7 +5,7 @@ import { GoReport } from 'react-icons/go';
 import { FaLocationArrow, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const ECommerce: React.FC = () => {
+const MyDashboard: React.FC = () => {
   return (
     <DefaultLayout>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5"></div>
@@ -68,4 +68,4 @@ const ECommerce: React.FC = () => {
   );
 };
 
-export default ECommerce;
+export default MyDashboard;
