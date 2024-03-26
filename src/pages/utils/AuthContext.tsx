@@ -86,6 +86,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       let accountDetails = await account.get();
       setUser(accountDetails); // if user is logged in, set the user state to the account details
     } catch (error) {
+      navigate('/auth/signin'); // if user is not logged in, redirect the user to the login page
+      setUser(null);
       console.log(error);
     }
 
