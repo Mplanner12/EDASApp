@@ -9,6 +9,9 @@ import Chart from './pages/Chart';
 import MyDashboard from './pages/Dashboard/MyDashboard';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
+import NotFoundPage from './components/Notfoundpage';
+
+/* App.tsx */
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -87,6 +90,15 @@ function App() {
             <>
               <PageTitle title="Signup | EDAS APP" />
               <SignUp />
+            </>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <>
+              <PageTitle title="404 | EDAS APP" />
+              <NotFoundPage />
             </>
           }
         />

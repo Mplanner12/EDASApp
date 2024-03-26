@@ -11,7 +11,7 @@ const chatData: Chat[] = [
     avatar: UserOne,
     name: 'Devid Heilo',
     text: 'How are you?',
-    phone: 8131415167,
+    phone: 234813415167,
     time: 12,
     textCount: 3,
     color: '#10B981',
@@ -22,7 +22,7 @@ const chatData: Chat[] = [
     text: 'Waiting for you!',
     time: 12,
     textCount: 0,
-    phone: 8119205163,
+    phone: 234813421768,
     color: '#DC3545',
   },
   {
@@ -31,7 +31,7 @@ const chatData: Chat[] = [
     text: "What's up?",
     time: 32,
     textCount: 0,
-    phone: 81311749452,
+    phone: 234703415431,
     color: '#10B981',
   },
   {
@@ -40,7 +40,7 @@ const chatData: Chat[] = [
     text: 'Great',
     time: 32,
     textCount: 2,
-    phone: 81314383529,
+    phone: 234802215663,
     color: '#FFBA00',
   },
   {
@@ -49,7 +49,7 @@ const chatData: Chat[] = [
     text: 'How are you?',
     time: 32,
     textCount: 0,
-    phone: 81311736480,
+    phone: 234901562782,
     color: '#10B981',
   },
   {
@@ -58,7 +58,7 @@ const chatData: Chat[] = [
     text: 'How are you?',
     time: 32,
     textCount: 3,
-    phone: 81404947355,
+    phone: 234801262882,
     color: '#FFBA00',
   },
 ];
