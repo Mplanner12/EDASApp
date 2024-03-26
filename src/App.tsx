@@ -5,7 +5,7 @@ import PageTitle from './components/PageTitle';
 import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
 import Calendar from './pages/Calendar';
-import Chart from './pages/Chart';
+// import Chart from './pages/Chart';
 import MyDashboard from './pages/Dashboard/MyDashboard';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
@@ -66,7 +66,7 @@ function App() {
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/chart"
           element={
             <>
@@ -74,7 +74,7 @@ function App() {
               <Chart />
             </>
           }
-        />
+        /> */}
         <Route
           path="/auth/signin"
           element={
