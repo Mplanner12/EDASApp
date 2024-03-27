@@ -3,109 +3,80 @@ import { Chat } from '../../types/chat';
 import UserOne from '../../images/user/user-01.png';
 import UserTwo from '../../images/user/user-02.png';
 import UserThree from '../../images/user/user-03.png';
-import UserFour from '../../images/user/user-04.png';
-import UserFive from '../../images/user/user-05.png';
+import { FaPhone } from 'react-icons/fa6';
 
 const chatData: Chat[] = [
   {
     avatar: UserOne,
-    name: 'Devid Heilo',
+    name: 'Fedfire Control Room, Abuja',
     text: 'How are you?',
-    phone: 234813415167,
+    phone: 2348032003557,
     time: 12,
     textCount: 3,
     color: '#10B981',
   },
   {
     avatar: UserTwo,
-    name: 'Henry Fisher',
-    text: 'Waiting for you!',
+    name: 'Fedfire Control Room, Kano',
+    text: '',
     time: 12,
     textCount: 0,
-    phone: 234813421768,
+    phone: 2348058689461,
     color: '#DC3545',
   },
   {
-    avatar: UserFour,
-    name: 'Jhon Doe',
-    text: "What's up?",
+    avatar: UserThree,
+    name: 'Kano State Fire Service',
+    text: 'How are you?',
     time: 32,
-    textCount: 0,
-    phone: 234703415431,
-    color: '#10B981',
-  },
-  {
-    avatar: UserFive,
-    name: 'Jane Doe',
-    text: 'Great',
-    time: 32,
-    textCount: 2,
-    phone: 234802215663,
+    textCount: 3,
+    phone: 2347051246833,
     color: '#FFBA00',
   },
   {
     avatar: UserOne,
-    name: 'Jhon Doe',
+    name: 'Kano State Fire Service',
     text: 'How are you?',
     time: 32,
     textCount: 0,
-    phone: 234901562782,
+    phone: 2348098822631,
     color: '#10B981',
-  },
-  {
-    avatar: UserThree,
-    name: 'Jhon Doe',
-    text: 'How are you?',
-    time: 32,
-    textCount: 3,
-    phone: 234801262882,
-    color: '#FFBA00',
   },
 ];
 
 const ChatCard = () => {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
-      <h4 className="mb-6 px-7.5 text-xl font-semibold text-black dark:text-white">
-        Hot Lines
+      <h4 className="mb-6 px-7.5 text-3xl font-semibold text-black dark:text-white">
+        Emergency Contacts
       </h4>
 
       <div>
         {chatData.map((chat, key) => (
           <Link
-            to="/"
-            className="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
+            to={''}
+            className="flex justify-between items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
             key={key}
           >
-            <div className="relative h-14 w-14 rounded-full">
-              <img src={chat.avatar} alt="User" />
-              <span
-                className="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white"
-                style={{ backgroundColor: chat.color }}
-              ></span>
-            </div>
-
-            <div className="flex flex-1 items-center justify-between">
-              <div>
-                <h5 className="font-medium text-black dark:text-white">
-                  {chat.phone}
-                </h5>
-                {/* <p>
-                  <span className="text-sm text-black dark:text-white">
-                    {chat.text}
-                  </span>
-                  <span className="text-xs"> . {chat.time} min</span>
-                </p> */}
+            <a href={`tel:${chat.phone}`}>
+              <div className="relative w-full">
+                <p className="text-red-600 font-semibold">
+                  {chat.name.toUpperCase()}
+                </p>
               </div>
-              {/* {chat.textCount !== 0 && (
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary">
-                  <span className="text-sm font-medium text-white">
-                    {' '}
-                    {chat.textCount}
-                  </span>
+
+              <div className="flex flex-1 items-center justify-between">
+                <div>
+                  <h5 className="flex justify-centerfont-medium text-black dark:text-white">
+                    <div className="mr-2 relative top-1.5">
+                      <FaPhone color="#10B981" size={20} />
+                    </div>
+                    <p>+</p>
+                    {chat.phone}
+                  </h5>
                 </div>
-              )} */}
-            </div>
+              </div>
+            </a>
           </Link>
         ))}
       </div>
