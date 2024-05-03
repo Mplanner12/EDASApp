@@ -4,7 +4,7 @@ import CoverOne from '../images/cover/cover-01.png';
 // import userSix from '../images/user/user-06.png';
 // import { Link } from 'react-router-dom';
 import { useAuth } from './utils/AuthContext';
-import { CgProfile } from 'react-icons/cg';
+// import { CgProfile } from 'react-icons/cg';
 
 const Profile = () => {
   const { user } = useAuth();
@@ -55,14 +55,15 @@ const Profile = () => {
         </div>
         <div className="px-4 pb-6 text-center lg:pb-8 xl:pb-11.5">
           <div className="relative z-30 mx-auto -mt-22 h-30 w-full max-w-30 rounded-full bg-white/20 p-1 backdrop-blur sm:h-44 sm:max-w-44 sm:p-3">
-            <div className="relative drop-shadow-2">
-              {/* <img
-                src={userSix}
+            <div className="relative drop-shadow-2 ">
+              <img
+                src="./Myavatar.png"
                 // src={user.image}
                 alt="profile"
-              /> */}
+                className="rounded-full"
+              />
               <div className="w-full bg-inherit h-full flex justify-center">
-                <CgProfile size={100} />
+                {/* <CgProfile size={100} /> */}
               </div>
               <label
                 htmlFor="profile"
@@ -108,13 +109,14 @@ const Profile = () => {
                 About EDAS
               </h4>
               <p className="mt-4.5">
-                EDAS App is a mobile app that is powered by AI to independently
-                capture, examine and determine emergencies and to report such to
-                respective agencies for further actions. A user might need to
-                launch the app and position the camera to capture the event. At
-                the background, the system will accurately determine the type of
-                emergency, retrieve the associated contacts and communicate with
-                agencies via the contact details.
+                EDAS App(Emergency detection and Alert system) is a mobile app
+                that is powered by AI to independently capture, examine and
+                determine emergencies and to report such to respective agencies
+                for further actions. A user might need to launch the app and
+                position the camera to capture the event. At the background, the
+                system will accurately determine the type of emergency, retrieve
+                the associated contacts and communicate with agencies via the
+                contact details.
               </p>
             </div>
           </div>
